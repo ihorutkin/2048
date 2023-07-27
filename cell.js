@@ -6,4 +6,13 @@ export class Cell{
         this.x = x
         this.y = y
     }
+
+    LinkTile(tile){
+        tile.setXY(this.x, this.y)
+        this.linkedTile = tile
+    }
+
+    isEmpty(){
+        return !this.linkedTile
+    }
 }

@@ -1,5 +1,9 @@
-import { Grid } from "./Grid"
+import { Grid } from "./Grid.js"
+import { Tile } from "./Tile.js"
 
 const gameBoard = document.getElementById('game-board')
 
 const grid = new Grid(gameBoard)
+
+grid.getRandomCell().LinkTile(new Tile(gameBoard))
+grid.getRandomCell().LinkTile(new Tile(gameBoard))
